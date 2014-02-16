@@ -1,6 +1,6 @@
-chrome.tabs.onUpdated.addlistener(
+chrome.tabs.onUpdated.addListener(
 	function(id, info, tab){
-		if (info.url.indexOf('masteringphyiscs')!=-1){
+		if (info.url && info.url.indexOf('masteringphyiscs')!=-1){
 			chrome.pageAction.show(tab.id);
 		}
 	}

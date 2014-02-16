@@ -5,11 +5,10 @@
   "description": "I fucking hate that shit",
   "version": "1.0",
 
-  "permissions": ["tabs"],
+  "permissions": ["*://*.masteringphysics.com/*"],
   
   "page_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_icon": "icon.png"
   },
 
   "background": {
@@ -18,7 +17,7 @@
   },
 
   "content_scripts": [{
-      "matches": ["http://*.masteringphysics.com/*"],
+      "matches": ["*://*.masteringphysics.com/*"],
       "js": ["js/jquery-1.11.0.min.js", "js/inject.js"]
     }
   ]
