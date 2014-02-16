@@ -2,8 +2,10 @@
   "manifest_version": 2,
 
   "name": "Fuck MasteringPhysics",
-  "description": "This extension is for providing camraderie when doing MasteringPhysics problems.",
+  "description": "I fucking hate that shit",
   "version": "1.0",
+
+  "permissions": ["tabs"],
   
   "page_action": {
     "default_icon": "icon.png",
@@ -16,7 +18,7 @@
   },
 
   "content_scripts": [{
-      "matches": ["http://masteringphysics.com/*"],
+      "matches": ["http://*.masteringphysics.com/*"],
       "js": ["js/jquery-1.11.0.min.js", "js/inject.js"]
     }
   ]
